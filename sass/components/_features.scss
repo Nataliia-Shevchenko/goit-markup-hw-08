@@ -1,0 +1,38 @@
+.features {
+  @include section(94px, 0);
+
+  &__list {
+    @extend .list;
+    display: flex;
+  }
+
+  &__item {
+    width: 270px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  &__img {
+    @extend %centeredFlex;
+    height: 120px;
+    margin-bottom: 30px;
+    background: var(--secondary-bgc);
+    border-radius: 4px;
+  }
+
+  &__label {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+  }
+}

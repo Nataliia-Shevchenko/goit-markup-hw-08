@@ -1,0 +1,35 @@
+.clients {
+  @include section;
+
+  &__title {
+    @extend %section__title;
+  }
+
+  &__list {
+    display: flex;
+    @extend .list;
+  }
+  &__item:not(last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  @extend %centeredFlex;
+  @extend .link;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--icon-color);
+  transition: color var(--timing-function), border-color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+.clients__icon {
+  fill: currentColor;
+}

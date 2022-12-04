@@ -59,16 +59,15 @@
           </li>
         </ul>
         <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg class="" width="40" height="40">
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-      
     </header>
 
     <main>
@@ -149,11 +148,16 @@
               <a href="" class="work__link"
                 ><div class="work__thumb">
                   <img
-                    src="./images/box1.jpg"
+                    class="work__img"
+                    srcset="
+                      ./images/work/img1_desk@1x.jpg 1x,
+                      ./images/work/img1_desk@2x.jpg 2x
+                    "
+                    src="./images/work/img1_desk@1x.jpg"
                     alt="ПК"
                     width="370"
                     height="294"
-                    class="work__img"
+                    loading="lazy"
                   />
                   <div class="work__back">
                     <p class="work__label">Десктопні додатки</p>
@@ -165,11 +169,16 @@
               <a href="" class="work__link"
                 ><div class="work__thumb">
                   <img
-                    src="./images/box2.jpg"
+                    class="work__img"
+                    srcset="
+                      ./images/work/img2_desk@1x.jpg 1x,
+                      ./images/work/img2_desk@2x.jpg 2x
+                    "
+                    src="./images/work/img2_desk@1x.jpg"
                     alt="Смартфон і ПК"
                     width="370"
                     height="294"
-                    class="work__img"
+                    loading="lazy"
                   />
                   <div class="work__back">
                     <p class="work__label">Мобільні додатки</p>
@@ -181,11 +190,16 @@
               <a href="" class="work__link"
                 ><div class="work__thumb">
                   <img
-                    src="./images/box3.jpg"
+                    class="work__img"
+                    srcset="
+                      ./images/work/img3_desk@1x.jpg 1x,
+                      ./images/work/img3_desk@2x.jpg 2x
+                    "
+                    src="./images/work/img3_desk@1x.jpg"
                     alt="Палітра кольорів на планшеті"
                     width="370"
                     height="294"
-                    class="work__img"
+                    loading="lazy"
                   />
                   <div class="work__back">
                     <p class="work__label">Дизайнерські рішення</p>
@@ -205,11 +219,19 @@
           <ul class="team__list">
             <li class="teamcard">
               <img
-                src="./images/teamcard1.jpg"
-                alt="Портрет Ігора Дем'яненка"
-                width="270"
-                height="260"
                 class="teamcard__img"
+                srcset="
+                  ./images/team/img1-270.jpg 270w,
+                  ./images/team/img1-354.jpg 354w,
+                  ./images/team/img1-450.jpg 450w,
+                  ./images/team/img1-540.jpg 540w,
+                  ./images/team/img1-708.jpg 708w,
+                  ./images/team/img1-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img1-450.jpg"
+                alt="Портрет Ігора Дем'яненка"
+                loading="lazy"
               />
               <div class="teamcard__desc">
                 <h3 class="teamcard__title">Ігор Дем'яненко</h3>
@@ -267,11 +289,19 @@
             </li>
             <li class="teamcard">
               <img
-                src="./images/teamcard2.jpg"
-                alt="Портрет Ольги Рєпіної"
-                width="270"
-                height="260"
                 class="teamcard__img"
+                srcset="
+                  ./images/team/img2-270.jpg 270w,
+                  ./images/team/img2-354.jpg 354w,
+                  ./images/team/img2-450.jpg 450w,
+                  ./images/team/img2-540.jpg 540w,
+                  ./images/team/img2-708.jpg 708w,
+                  ./images/team/img2-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img2-450.jpg"
+                alt="Портрет Ольги Рєпіної"
+                loading="lazy"
               />
               <div class="teamcard__desc">
                 <h3 class="teamcard__title">Ольга Рєпіна</h3>
@@ -329,11 +359,19 @@
             </li>
             <li class="teamcard">
               <img
-                src="./images/teamcard3.jpg"
-                alt="Портрет Миколи Тарасова"
-                width="270"
-                height="260"
                 class="teamcard__img"
+                srcset="
+                  ./images/team/img3-270.jpg 270w,
+                  ./images/team/img3-354.jpg 354w,
+                  ./images/team/img3-450.jpg 450w,
+                  ./images/team/img3-540.jpg 540w,
+                  ./images/team/img3-708.jpg 708w,
+                  ./images/team/img3-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img3-450.jpg"
+                alt="Портрет Миколи Тарасова"
+                loading="lazy"
               />
               <div class="teamcard__desc">
                 <h3 class="teamcard__title">Микола Тарасов</h3>
@@ -391,11 +429,19 @@
             </li>
             <li class="teamcard">
               <img
-                src="./images/teamcard4.jpg"
-                alt="Портрет Михайла Єрмакова"
-                width="270"
-                height="260"
                 class="teamcard__img"
+                srcset="
+                  ./images/team/img4-270.jpg 270w,
+                  ./images/team/img4-354.jpg 354w,
+                  ./images/team/img4-450.jpg 450w,
+                  ./images/team/img4-540.jpg 540w,
+                  ./images/team/img4-708.jpg 708w,
+                  ./images/team/img4-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img4-450.jpg"
+                alt="Портрет Михайла Єрмакова"
+                loading="lazy"
               />
               <div class="teamcard__desc">
                 <h3 class="teamcard__title">Михайло Єрмаков</h3>
@@ -503,7 +549,7 @@
     </main>
 
     <!--Підвал-->
-    
+
     <footer class="footer">
       <div class="container">
         <div class="footer__address">
@@ -698,13 +744,21 @@
       </button>
 
       <ul class="mobile-menu">
-        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link current">Студія</a></li>
-        <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Портфоліо</a></li>
-        <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Контакти</a></li>
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link current">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="/" class="mobile-menu__link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="/" class="mobile-menu__link">Контакти</a>
+        </li>
       </ul>
       <ul class="mobile-menu-contacts">
         <li class="mobile-menu-contacts__item">
-          <a href="tel:+380961111111" class="mobile-menu-contacts__tel">+38 096 111 11 11</a>
+          <a href="tel:+380961111111" class="mobile-menu-contacts__tel"
+            >+38 096 111 11 11</a
+          >
         </li>
         <li class="mobile-menu-contacts__item">
           <a href="mailto:info@devstudio.com" class="mobile-menu-contacts__mail"
@@ -714,16 +768,24 @@
       </ul>
       <ul class="mobile-menu-socials">
         <li class="mobile-menu-socials__item">
-          <a href="https://instagram.com" class="mobile-menu-socials__link">Instagram</a>
+          <a href="https://instagram.com" class="mobile-menu-socials__link"
+            >Instagram</a
+          >
         </li>
         <li class="mobile-menu-socials__item">
-          <a href="https://twitter.com" class="mobile-menu-socials__link">Twitter</a>
+          <a href="https://twitter.com" class="mobile-menu-socials__link"
+            >Twitter</a
+          >
         </li>
         <li class="mobile-menu-socials__item">
-          <a href="https://facebook.com" class="mobile-menu-socials__link">Facebook</a>
+          <a href="https://facebook.com" class="mobile-menu-socials__link"
+            >Facebook</a
+          >
         </li>
         <li class="mobile-menu-socials__item">
-          <a href="https://linkedin.com" class="mobile-menu-socials__link">LinkedIn</a>
+          <a href="https://linkedin.com" class="mobile-menu-socials__link"
+            >LinkedIn</a
+          >
         </li>
       </ul>
     </div>

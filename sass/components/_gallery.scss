@@ -1,5 +1,5 @@
 .gallery {
-  @include section;
+  @extend %section;
 }
 
 .projects {

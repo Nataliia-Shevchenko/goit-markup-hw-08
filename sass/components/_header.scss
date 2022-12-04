@@ -1,4 +1,6 @@
 .header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -13,13 +15,23 @@
 }
 
 .header-contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @extend .list;
   display: flex;
   margin-left: auto;
+  @media screen and (max-width: 1199px) {
+  flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
   align-items: center;
+  }
 
   &__item:not(last-child) {
+    @media screen and (min-width: 1200px) {
     margin-left: 50px;
+    }
   }
 
   &__icon {

@@ -1,5 +1,8 @@
 .work {
-  @include section;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @extend %section;
 
   &__title {
     @extend %section__title;

@@ -1,7 +1,11 @@
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .main-nav {
@@ -21,9 +25,11 @@
   }
   @extend .list;
   display: flex;
+
   margin-left: auto;
   @media screen and (max-width: 1199px) {
     flex-direction: column;
+    gap: 10px;
   }
   @media screen and (min-width: 1200px) {
     align-items: center;

@@ -7,6 +7,7 @@
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav {
@@ -22,15 +23,15 @@
   display: flex;
   margin-left: auto;
   @media screen and (max-width: 1199px) {
-  flex-direction: column;
+    flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
-  align-items: center;
+    align-items: center;
   }
 
   &__item:not(last-child) {
     @media screen and (min-width: 1200px) {
-    margin-left: 50px;
+      margin-left: 50px;
     }
   }
 
@@ -45,11 +46,15 @@
   align-items: baseline;
   gap: 10px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16666;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition: color var(--timing-function);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   &:hover,
   &:focus {

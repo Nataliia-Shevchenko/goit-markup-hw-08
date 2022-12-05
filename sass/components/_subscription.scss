@@ -1,19 +1,33 @@
 .footer__form {
-  margin-left: auto;
+  
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .subscription__data {
   display: flex;
-}
 
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .subscription__field {
+  @media screen and (max-width: 479px) {
+    max-width: 90vw;
+  }
+
   display: flex;
   align-items: center;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
+
   outline: unset;
-  width: 358px;
+  width: 450px;
   height: 50px;
+
   font-size: 16px;
   line-height: 1.25;
   color: var(--footer-contact-color);
@@ -23,16 +37,22 @@
   border-radius: 4px;
   transition: border-color var(--timing-function);
 
-  &:focus {
-    border-color: var(--accent-color);
+  
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
   }
 }
 
+.subscription__field:focus {
+  border-color: var(--accent-color);
+}
 .subscription-btn {
-  @extend %centeredFlex;
   @extend .btn;
+  @extend %centeredFlex;
   min-width: 200px;
-  min-height: 50px;
+  height: 50px;
 
   font-weight: 700;
   font-size: 16px;
@@ -42,9 +62,9 @@
   color: var(--primary-bgc);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
-  &__icon {
-    margin-left: 10px;
-    fill: currentColor;
-  }
+.subscription-btn__icon {
+  margin-left: 10px;
+  fill: currentColor;
 }

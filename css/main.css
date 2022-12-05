@@ -596,16 +596,12 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--icon-color);
+  -webkit-transition: color var(--timing-function), border-color var(--timing-function);
+  transition: color var(--timing-function), border-color var(--timing-function);
 }
-@media screen and (min-width: 1200px) {
-  .clients__link {
-    -webkit-transition: color var(--timing-function), border-color var(--timing-function);
-    transition: color var(--timing-function), border-color var(--timing-function);
-  }
-  .clients__link:hover, .clients__link:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-  }
+.clients__link:hover, .clients__link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .clients__icon {

@@ -14,8 +14,8 @@
   }
 
   &__item {
-      flex-basis: calc((100% - 30px * (2 - 1)) / (2));
-    
+    flex-basis: calc((100% - 30px * (2 - 1)) / (2));
+
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px * (3 - 1)) / (3));
     }
@@ -33,15 +33,14 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--icon-color);
-
   @media screen and (min-width: 1200px) {
-    transition: color var(--timing-function),
-      border-color var(--timing-function);
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-      color: var(--accent-color);
-    }
+  transition: color var(--timing-function), border-color var(--timing-function);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
   }
 }
 
